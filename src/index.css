@@ -1,13 +1,158 @@
-body {
+/* Universal Selector  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  font-weight: 400;
+  line-height: 1.8rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #E26EE5;
+}
+
+
+/* Tag Selector  */
+
+botton {
+  cursor: pointer;
+}
+
+img {
+  height: 20rem;
+  width: 30rem;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px 10px 0px 0px;
+}
+
+h1 {
+  color: red;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-family: 'Roboto';
+  font-weight: 600;
+
+}
+
+button {
+  border: none;
+}
+
+.underline {
+  border: 2px solid green;
+  width: 80px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+/* .container{
+  height: 100vh;
+} */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* margin-left: 10rem; */
+  border-radius: 10px;
+  /* height: 50rem; */
+}
+
+
+/* Tour Comonent  */
+
+.card {
+  background-color: pink;
+  /* height: 60%; */
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: aquamarine;
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.image_info {
+  width: 30rem;
+  gap: 2rem;
+}
+
+.info {
+  line-height: 1rem;
+  padding: 1rem;
+  color: rgb(104, 78, 78);
+  /* display: relative; */
+}
+
+.price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(40, 88, 40);
+  padding: 0.1rem 1.5rem;
+  color: white;
+  border-radius: 0px 10px 0px 0px;
+}
+
+.name {
+  color: black;
+  font: 'Roboto';
+  font-weight: 500;
+  font-weight: 'Roboto';
+  display: flex;
+  justify-content: center;
+}
+
+.read,
+.not__interested {
+  color: green;
+  font-weight: 600;
+  border: none;
+  background-color: aquamarine;
+}
+
+
+.paragraph {
+  box-sizing: border-box;
+}
+
+.not__interested {
+  padding: 0.3rem 11rem;
+  border: 2px solid rgb(69, 94, 69);
+  border-radius: 5px;
+}
+
+.paragraph_show_less {
+  max-height: 20rem;
+}
+
+.paragraph_show_more {
+  height: 4rem;
+
+}
+
+.not__interested:hover {
+  background-color: rgb(106, 201, 106);
+  color: white;
+}
+
+.no__more__tour {
+  display: flex;
+  justify-content: center;
+}
+
+.refresh_btn {
+  margin-left: -12rem;
+  margin-top: 5rem;
+  height: 2rem;
+  width: 8rem;
+  font-family: 'Roboto';
+  font-weight: 600;
+  border-radius: 5px;
 }
